@@ -1,0 +1,142 @@
+2023-09-14-21:17:01 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-14-21:17:05 INFO  open leads page
+2023-09-14-21:17:05 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-14-21:17:05 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-14-21:17:05 INFO  open leads page
+2023-09-14-21:17:05 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-14-21:19:15 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-14-21:19:20 INFO  open leads page
+2023-09-14-21:26:08 INFO  CommonTest : setup :verifyOpportunityList_TC15 The object for reporting is created
+2023-09-14-21:26:12 INFO  open Opportunity page
+2023-09-14-21:26:12 INFO  verify opportunity list
+2023-09-14-21:26:12 INFO  CommonTest : setup :verifyOpportunityList_TC15 teardown called
+2023-09-14-21:29:21 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-14-21:29:24 INFO  open leads page
+2023-09-14-21:30:41 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-14-22:13:52 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-14-22:13:55 INFO  open leads page
+2023-09-14-22:17:14 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-14-23:01:06 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-14-23:01:10 INFO  open leads page
+2023-09-14-23:02:04 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-14-23:02:04 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-14-23:02:04 INFO  open leads page
+2023-09-14-23:02:52 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-11:23:57 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-11:24:00 INFO  open leads page
+2023-09-15-11:24:30 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-11:24:30 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-11:24:31 INFO  open leads page
+2023-09-15-11:24:34 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-11:24:34 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-11:24:34 INFO  open leads page
+2023-09-15-11:24:34 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-11:24:34 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-11:24:35 INFO  open leads page
+2023-09-15-11:25:05 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-11:25:05 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-11:25:06 INFO  open leads page
+2023-09-15-11:25:06 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-11:39:18 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-11:39:21 INFO  open leads page
+2023-09-15-11:39:21 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-11:39:21 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-11:39:22 INFO  open leads page
+2023-09-15-11:39:22 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-11:39:22 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-11:39:23 INFO  open leads page
+2023-09-15-11:39:54 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-11:39:54 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-11:39:54 INFO  open leads page
+2023-09-15-11:40:25 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-11:40:25 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-11:40:41 INFO  open leads page
+2023-09-15-11:41:13 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-11:48:34 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-11:48:37 INFO  open leads page
+2023-09-15-11:48:37 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-11:48:37 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-11:48:38 INFO  open leads page
+2023-09-15-11:49:04 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-11:49:04 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-11:49:04 INFO  open leads page
+2023-09-15-12:04:34 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-12:04:37 INFO  open leads page
+2023-09-15-13:55:55 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-13:55:57 INFO  open leads page
+2023-09-15-13:58:17 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-13:58:17 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-13:58:23 INFO  open leads page
+2023-09-15-13:59:38 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-13:59:38 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-13:59:57 INFO  open leads page
+2023-09-15-14:00:01 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-14:05:00 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:05:05 INFO  open leads page
+2023-09-15-14:06:43 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:08:09 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:08:15 INFO  open leads page
+2023-09-15-14:08:16 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:08:16 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-14:08:17 INFO  open leads page
+2023-09-15-14:08:19 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-14:15:01 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-14:15:06 INFO  open leads page
+2023-09-15-14:15:06 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-14:15:06 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-14:15:07 INFO  open leads page
+2023-09-15-14:15:07 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-14:15:07 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-14:15:08 INFO  open leads page
+2023-09-15-14:15:15 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-14:15:15 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:15:15 INFO  open leads page
+2023-09-15-14:16:16 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:16:16 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-14:16:17 INFO  open leads page
+2023-09-15-14:16:19 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-14:25:20 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-14:25:26 INFO  open leads page
+2023-09-15-14:25:26 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-14:25:26 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-14:25:26 INFO  open leads page
+2023-09-15-14:25:41 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-14:25:41 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-14:25:41 INFO  open leads page
+2023-09-15-14:25:47 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-14:25:47 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:25:47 INFO  open leads page
+2023-09-15-14:27:23 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:27:23 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-14:27:29 INFO  open leads page
+2023-09-15-14:27:49 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-14:29:01 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-14:29:05 INFO  open leads page
+2023-09-15-14:29:05 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-14:29:05 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-14:29:05 INFO  open leads page
+2023-09-15-14:29:06 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-14:29:06 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-14:29:06 INFO  open leads page
+2023-09-15-14:29:13 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-14:29:13 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:29:13 INFO  open leads page
+2023-09-15-14:29:44 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:29:44 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-14:29:53 INFO  open leads page
+2023-09-15-14:29:56 INFO  CommonTest : setup :newLead_TC24 teardown called
+2023-09-15-14:30:54 INFO  CommonTest : setup :openLeadsPage_TC20 The object for reporting is created
+2023-09-15-14:30:57 INFO  open leads page
+2023-09-15-14:30:57 INFO  CommonTest : setup :openLeadsPage_TC20 teardown called
+2023-09-15-14:30:57 INFO  CommonTest : setup :verifyLeadsViewList_TC21 The object for reporting is created
+2023-09-15-14:30:57 INFO  open leads page
+2023-09-15-14:30:57 INFO  CommonTest : setup :verifyLeadsViewList_TC21 teardown called
+2023-09-15-14:30:57 INFO  CommonTest : setup :DefaultView_TC22 The object for reporting is created
+2023-09-15-14:30:58 INFO  open leads page
+2023-09-15-14:31:05 INFO  CommonTest : setup :DefaultView_TC22 teardown called
+2023-09-15-14:31:05 INFO  CommonTest : setup :todaysLeadPage_TC23 The object for reporting is created
+2023-09-15-14:31:06 INFO  open leads page
+2023-09-15-14:31:06 INFO  CommonTest : setup :todaysLeadPage_TC23 teardown called
+2023-09-15-14:31:06 INFO  CommonTest : setup :newLead_TC24 The object for reporting is created
+2023-09-15-14:31:07 INFO  open leads page
+2023-09-15-14:31:10 INFO  CommonTest : setup :newLead_TC24 teardown called

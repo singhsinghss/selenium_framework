@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21904" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:31:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21904" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:31:10Z">
+      <class name="sfdcTests.LeadsTest">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setDriver" is-config="true" duration-ms="2860" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:30:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="navigateToHome()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="navigateToHome" is-config="true" duration-ms="2259" started-at="2023-09-15T18:30:51Z" finished-at="2023-09-15T18:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="69" started-at="2023-09-15T18:30:54Z" finished-at="2023-09-15T18:30:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openLeadsPage_TC20(java.lang.reflect.Method)[pri:1, instance:sfdcTests.LeadsTest@71a8adcf]" name="openLeadsPage_TC20" duration-ms="2849" started-at="2023-09-15T18:30:54Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLeadsPage_TC20 -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="6" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLeadsViewList_TC21(java.lang.reflect.Method)[pri:2, instance:sfdcTests.LeadsTest@71a8adcf]" name="verifyLeadsViewList_TC21" duration-ms="775" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLeadsViewList_TC21 -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="11" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="DefaultView_TC22(java.lang.reflect.Method)[pri:3, instance:sfdcTests.LeadsTest@71a8adcf]" name="DefaultView_TC22" duration-ms="7728" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:31:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefaultView_TC22 -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="1" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="4" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="todaysLeadPage_TC23(java.lang.reflect.Method)[pri:4, instance:sfdcTests.LeadsTest@71a8adcf]" name="todaysLeadPage_TC23" duration-ms="1273" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todaysLeadPage_TC23 -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="6" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="newLead_TC24(java.lang.reflect.Method)[pri:5, instance:sfdcTests.LeadsTest@71a8adcf]" name="newLead_TC24" duration-ms="3570" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newLead_TC24 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="remove" is-config="true" duration-ms="435" started-at="2023-09-15T18:31:10Z" finished-at="2023-09-15T18:31:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:31:10Z" finished-at="2023-09-15T18:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sfdcTests.LeadsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
