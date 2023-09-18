@@ -6,13 +6,16 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import listeners.SFDClisteners;
 import sfdcPages.CreateAccountPage;
 import sfdcPages.LoginPage;
 import sfdcUtils.FileUtils;
 
+@Listeners(SFDClisteners.class)
 public class CreateAccountTest extends CommonTest{
   @BeforeClass
   public void navigateToHomePage() throws IOException {

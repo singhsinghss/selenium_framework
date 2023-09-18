@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -13,10 +14,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.beust.jcommander.Parameter;
 
 import Constants.FileConstants;
 
@@ -42,13 +45,15 @@ public class CommonTest {
 	{
 		logger.info("CommonTest : setup :"+name.getName()+" teardown called");
 	}
-	
+	@Parameters({"broserName","isHeadless"})
 	@BeforeTest
-	public static void setDriver()
+	public static void setDriver(String browserName,boolean isHeadless)
 	{
 		spark=new ExtentSparkReporter(new File(FileConstants.REPORT_PATH));
 		extent.attachReporter(spark);
-		WebDriver driver=OpenBrowser("chrome");
+		logger.info("BaseTest : setDriver :  Spark report configured");
+		WebDriver driver=OpenBrowser(browserName,isHeadless);
+		logger.info("BaseTest : setDriver : driver object assigned");
 		LocalDriver.set(driver);
 		
 	}
@@ -61,29 +66,46 @@ public class CommonTest {
 	{
 		getDriver().close();
 		LocalDriver.remove();
+		logger.info("BaseTest : removeDriver : removed driver");
 		extent.flush();
 	}
 	
-	public static WebDriver OpenBrowser(String browser)
+	public static WebDriver OpenBrowser(String browser,boolean headless)
 	{
 		WebDriver driver;
 		String Type=browser.toLowerCase();
 		switch (Type)
 		{
 			case "chrome":
-				driver=new ChromeDriver();
+				if(headless) {
+					ChromeOptions co=new ChromeOptions();
+					logger.info("BaseTest : getBrowserType : Headless chrome configured");
+					co.addArguments("--headless");
+					driver=new ChromeDriver(co);
+				//	driver=new ChromeDriver();
+					
+				}
+				else
+				{
+					driver=new ChromeDriver();
+					logger.info("BaseTest : getBrowserType : Chrome configured");
+				}
 				break;
 			case "firefox":
 				driver=new FirefoxDriver();
+				logger.info("BaseTest : getBrowserType : Firefix configured");
 				break;
 			case "safari":
 				driver=new SafariDriver();
+				logger.info("BaseTest : getBrowserType : Safari configured");
 				break;
 			case "edge":
 				driver=new EdgeDriver();
+				logger.info("BaseTest : getBrowserType : EdgeDriver configured");
 				break;
 			default:
 				driver=null;
+				logger.fatal("BaseTest : getBrowserType : Incorrect browser name supplied");
 				break;
 		}
 		return driver;

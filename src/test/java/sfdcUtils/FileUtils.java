@@ -63,4 +63,22 @@ public class FileUtils {
 	  pFile.load(fr);
 	  return pFile.getProperty(Key);
   }
+  
+  public static String readContactsTestData(String Key) throws IOException
+  {
+	  File file=new File(FileConstants.CONTACTS_FILE_PATH);
+	  FileReader fr=new FileReader(file);
+	  Properties pFile=new Properties();
+	  pFile.load(fr);
+	  return pFile.getProperty(Key);
+  }
+  
+  public static String readRandomTestData(String Key) throws IOException
+  {
+	  File file=new File(FileConstants.RANDOM_SCENARIOS_FILE_PATH);
+	  FileReader fr=new FileReader(file);
+	  Properties pFile=new Properties();
+	  pFile.load(fr);
+	  return pFile.getProperty(Key);
+  }
 }

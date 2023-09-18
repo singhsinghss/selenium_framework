@@ -1,190 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21904" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:31:10Z">
+  <suite name="RegressionSuite" duration-ms="44" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21904" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:31:10Z">
-      <class name="sfdcTests.LeadsTest">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setDriver" is-config="true" duration-ms="2860" started-at="2023-09-15T18:30:48Z" finished-at="2023-09-15T18:30:51Z">
+    <test name="Test" duration-ms="44" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+      <class name="sfdcTests.LoginTest">
+        <test-method status="FAIL" signature="setDriver(java.lang.String, boolean)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setDriver" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="navigateToHome()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="navigateToHome" is-config="true" duration-ms="2259" started-at="2023-09-15T18:30:51Z" finished-at="2023-09-15T18:30:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToHome -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="69" started-at="2023-09-15T18:30:54Z" finished-at="2023-09-15T18:30:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setup" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="openLeadsPage_TC20(java.lang.reflect.Method)[pri:1, instance:sfdcTests.LeadsTest@71a8adcf]" name="openLeadsPage_TC20" duration-ms="2849" started-at="2023-09-15T18:30:54Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="LoginFail(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="LoginFail" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openLeadsPage_TC20 -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.openLeadsPage_TC20(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- LoginFail -->
+        <test-method status="SKIP" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="6" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setup" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLeadsViewList_TC21(java.lang.reflect.Method)[pri:2, instance:sfdcTests.LeadsTest@71a8adcf]" name="verifyLeadsViewList_TC21" duration-ms="775" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="LoginSuccess(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="LoginSuccess" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLeadsViewList_TC21 -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.verifyLeadsViewList_TC21(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- LoginSuccess -->
+        <test-method status="SKIP" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="11" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setup" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="DefaultView_TC22(java.lang.reflect.Method)[pri:3, instance:sfdcTests.LeadsTest@71a8adcf]" name="DefaultView_TC22" duration-ms="7728" started-at="2023-09-15T18:30:57Z" finished-at="2023-09-15T18:31:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DefaultView_TC22 -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="1" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.DefaultView_TC22(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="4" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="VerifyInvalidCredentials(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="VerifyInvalidCredentials" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyInvalidCredentials -->
+        <test-method status="SKIP" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setup" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="todaysLeadPage_TC23(java.lang.reflect.Method)[pri:4, instance:sfdcTests.LeadsTest@71a8adcf]" name="todaysLeadPage_TC23" duration-ms="1273" started-at="2023-09-15T18:31:05Z" finished-at="2023-09-15T18:31:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="forgotpasswordTest4A(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="forgotpasswordTest4A" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- todaysLeadPage_TC23 -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.todaysLeadPage_TC23(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- forgotpasswordTest4A -->
+        <test-method status="SKIP" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="setup" is-config="true" duration-ms="6" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="setup(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="setup" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newLead_TC24(java.lang.reflect.Method)[pri:5, instance:sfdcTests.LeadsTest@71a8adcf]" name="newLead_TC24" duration-ms="3570" started-at="2023-09-15T18:31:06Z" finished-at="2023-09-15T18:31:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="rememberMeTest3(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="rememberMeTest3" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'broserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in D:\Automation\Selenium-workspace\SalesForceAutomation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newLead_TC24 -->
-        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="remove" is-config="true" duration-ms="435" started-at="2023-09-15T18:31:10Z" finished-at="2023-09-15T18:31:10Z">
+        </test-method> <!-- rememberMeTest3 -->
+        <test-method status="SKIP" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="remove()[pri:0, instance:sfdcTests.LoginTest@201a4587]" name="remove" is-config="true" duration-ms="0" started-at="2023-09-18T01:43:27Z" finished-at="2023-09-18T01:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remove -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:sfdcTests.LeadsTest@71a8adcf]" name="teardown" is-config="true" duration-ms="0" started-at="2023-09-15T18:31:10Z" finished-at="2023-09-15T18:31:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sfdcTests.LeadsTest.newLead_TC24(java.lang.reflect.Method) throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- sfdcTests.LeadsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- sfdcTests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

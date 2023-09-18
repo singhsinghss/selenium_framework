@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import Constants.FileConstants;
 import Constants.WaitConstants;
+import io.netty.handler.timeout.TimeoutException;
 import sfdcTests.CommonTest;
 
 public class CommonUtils {
@@ -42,6 +43,9 @@ public class CommonUtils {
 	public static boolean waitForElementToDisplay(WebDriver driver,WebElement element)
 	{
 		boolean isElementVisible=false;
+		try
+		{
+		
 		WebDriverWait wait=new WebDriverWait(driver,WaitConstants.WAIT_FOR_ELEMENT);
 		try
 		{
@@ -51,6 +55,12 @@ public class CommonUtils {
 		catch(Exception e)
 		{
 			e.printStackTrace();
+		}
+		
+	}
+		catch(TimeoutException t)
+		{
+			System.out.println("Timeout exception "+t.getMessage());
 		}
 		return isElementVisible;
 	}
@@ -69,6 +79,22 @@ public class CommonUtils {
 			e.printStackTrace();
 		}
 		return isElementDisappear;
+	}
+	
+	public static boolean waitForAlertToAppear(WebDriver driver)
+	{
+		boolean isAlertDisplayed=false;
+		WebDriverWait wait=new WebDriverWait(driver,WaitConstants.WAIT_FOR_ELEMENT);
+		try
+		{
+			wait.until(ExpectedConditions.alertIsPresent());
+			isAlertDisplayed=true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return isAlertDisplayed;
 	}
 	public static String getStringDateTimeStamp()
 	{

@@ -3,6 +3,7 @@ package sfdcTests;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.Assert;
 import java.io.IOException;

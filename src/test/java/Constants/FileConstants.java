@@ -14,4 +14,6 @@ public class FileConstants {
 	public static final String CREATE_ACCOUNT_FILE_PATH=System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\CreateAccount.properties";
 	public static final String OPPORTUNITY_FILE_PATH=System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\OpportunityTestData.properties";
 	public static final String LEADS_FILE_PATH=System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\LeadsTestData.properties";
+	public static final String CONTACTS_FILE_PATH=System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\ContactsTestData.properties";
+	public static final String RANDOM_SCENARIOS_FILE_PATH=System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\RandomScenarios.properties";
 }

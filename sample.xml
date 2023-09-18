@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="resgressionsuite">
+	<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="isHeadless" value="false"></parameter>
+	<test name="Login">
+		<classes>
+			<class name="sfdcTests.LoginTest"></class>
+			<!-- <class name="sfdcTests.UserMenuTest"></class> -->
+		</classes>
+	</test>
+</suite>
