@@ -22,7 +22,7 @@ import sfdcUtils.FileUtils;
 @Listeners(SFDClisteners.class)
 public class UserMenuTest extends CommonTest{
   
-	@BeforeClass
+	@BeforeMethod
   public void navigateToHomePage() throws IOException {
 		WebDriver driver=CommonTest.getDriver();
 		LoginPage lp=new LoginPage(driver);
@@ -43,7 +43,7 @@ public class UserMenuTest extends CommonTest{
 	{
 		WebDriver driver=CommonTest.getDriver();
 		UserMenu ump=new UserMenu(driver);
-		logger.info("UserMenuPage : TC06 :"+name.getName()+" The object for UserMenu page is created");
+		//logger.info("UserMenuPage : TC06 :"+name.getName()+" The object for UserMenu page is created");
 		CommonUtils.waitForElementToDisplay(driver, ump.Usermenu);
 		ump.Usermenu.click();
 		Assert.assertTrue(ump.verifyUserMenuOptions());
@@ -66,7 +66,7 @@ public class UserMenuTest extends CommonTest{
 		WebDriver driver=CommonTest.getDriver();
 		SoftAssert softAssert=new SoftAssert();
 		UserMenu ump=new UserMenu(driver);
-		logger.info("UserMenuPage : TC07 :"+name.getName()+" The object for UserMenu page is created");
+		//logger.info("UserMenuPage : TC07 :"+name.getName()+" The object for UserMenu page is created");
 		CommonUtils.waitForElementToDisplay(driver, ump.Usermenu);
 		Assert.assertTrue(ump.mySetting(driver));
 		ump.DownloadLoginHistory(driver);
@@ -90,19 +90,20 @@ public class UserMenuTest extends CommonTest{
 	{
 		WebDriver driver=CommonTest.getDriver();
 		UserMenu ump=new UserMenu(driver);
-		logger.info("UserMenuPage : TC08 :"+name.getName()+" The object for UserMenu page is created");
+		//logger.info("UserMenuPage : TC08 :"+name.getName()+" The object for UserMenu page is created");
 		Assert.assertTrue(ump.openDeveloperConsole(driver));
-		logger.info("Open Developer console");
+		//logger.info("Open Developer console");
 		Assert.assertTrue(ump.verifyDCWindowOpened(driver));
-		logger.info("verify whether developer console window opened");
+		//logger.info("verify whether developer console window opened");
 	}
 	
-	@Test public void logout_TC09(Method name)
+	@Test 
+	public void logout_TC09(Method name)
 	{
 		WebDriver driver=CommonTest.getDriver();
 		UserMenu ump=new UserMenu(driver);
-		logger.info("UserMenuPage : TC09 :"+name.getName()+" The object for UserMenu page is created");
-		logger.info("logout from application");
+		//logger.info("UserMenuPage : TC09 :"+name.getName()+" The object for UserMenu page is created");
+		//logger.info("logout from application");
 		Assert.assertTrue(ump.logout(driver));
 		//Assert.assertTrue(ump.verifyLogout(driver));
 	}

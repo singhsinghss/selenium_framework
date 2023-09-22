@@ -1,0 +1,13 @@
+2023-09-21-12:13:52 INFO  CommonTest : setDriver :  Spark report configured
+2023-09-21-12:13:52 INFO  BaseTest : getBrowserType : Headless chrome configured
+2023-09-21-12:13:57 INFO  CommonTest : setDriver : driver object assigned
+2023-09-21-12:14:00 INFO  UserMenuPage : TC08 :DeveloperConsole_TC08 The object for UserMenu page is created
+2023-09-21-12:14:04 INFO  Open Developer console
+2023-09-21-12:14:04 INFO  verify whether developer console window opened
+2023-09-21-12:15:48 INFO  CommonTest : setDriver :  Spark report configured
+2023-09-21-12:15:48 INFO  BaseTest : getBrowserType : Headless chrome configured
+2023-09-21-12:15:50 INFO  CommonTest : setDriver : driver object assigned
+2023-09-21-12:15:51 INFO  UserMenuPage : TC08 :DeveloperConsole_TC08 The object for UserMenu page is created
+2023-09-21-12:16:39 INFO  CommonTest : setDriver :  Spark report configured
+2023-09-21-12:16:39 INFO  BaseTest : getBrowserType : Headless chrome configured
+2023-09-21-12:16:41 INFO  CommonTest : setDriver : driver object assigned

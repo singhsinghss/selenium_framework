@@ -3,6 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
   <parameter name="isHeadless" value="false"/>
   <parameter name="browserName" value="chrome"/>
+  <listeners>
+    <listener class-name="listeners.SFDClisteners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="sfdcTests.LoginTest">
@@ -11,7 +14,6 @@
           <include name="forgotpasswordTest4A"/>
           <include name="teardown"/>
           <include name="LoginFail"/>
-          <include name="setup"/>
           <include name="LoginSuccess"/>
           <include name="VerifyInvalidCredentials"/>
           <include name="setDriver"/>

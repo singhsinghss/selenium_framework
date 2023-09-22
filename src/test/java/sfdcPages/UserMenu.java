@@ -221,6 +221,7 @@ public class UserMenu extends CommonPage{
   @FindBy (css="#Login")
   public WebElement loginButton;
   
+  /********************************TC06***********************/
   public boolean selectOptionFromUserMenuOptions(WebDriver driver, String sOption) {
 		boolean isOptionSelected = false;
 		if (Usermenu.isDisplayed()) {
@@ -395,7 +396,7 @@ public class UserMenu extends CommonPage{
 	  }
 	  return isPhotoUploaded;
   }
-  
+  /*******************mySetting_TC07*********************/
   public boolean mySetting(WebDriver driver)
   {
 	  boolean isPageDisplayed=false;

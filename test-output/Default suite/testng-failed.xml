@@ -3,16 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sfdcTests.RandomScenariosTest">
+      <class name="sfdcTests.UserMenuTest">
         <methods>
           <include name="remove"/>
-          <include name="navigateToHome"/>
-          <include name="removeTab_TC35" invocation-numbers="0"/>
           <include name="teardown"/>
-          <include name="setup"/>
+          <include name="getDriver"/>
+          <include name="configureReport"/>
+          <include name="logout_TC09"/>
+          <include name="mySetting_TC07"/>
+          <include name="myProfile_TC06"/>
+          <include name="userMenuDropDown_TC05"/>
+          <include name="navigateToHomePage"/>
+          <include name="DeveloperConsole_TC08"/>
           <include name="setDriver"/>
         </methods>
-      </class> <!-- sfdcTests.RandomScenariosTest -->
+      </class> <!-- sfdcTests.UserMenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

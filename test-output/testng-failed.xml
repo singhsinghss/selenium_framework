@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
-  <parameter name="isHeadless" value="false"/>
-  <parameter name="browserName" value="chrome"/>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sfdcTests.LoginTest">
+      <class name="sfdcTests.UserMenuTest">
         <methods>
           <include name="remove"/>
-          <include name="forgotpasswordTest4A"/>
           <include name="teardown"/>
-          <include name="LoginFail"/>
-          <include name="setup"/>
-          <include name="LoginSuccess"/>
-          <include name="VerifyInvalidCredentials"/>
+          <include name="getDriver"/>
+          <include name="configureReport"/>
+          <include name="logout_TC09"/>
+          <include name="mySetting_TC07"/>
+          <include name="myProfile_TC06"/>
+          <include name="userMenuDropDown_TC05"/>
+          <include name="navigateToHomePage"/>
+          <include name="DeveloperConsole_TC08"/>
           <include name="setDriver"/>
-          <include name="rememberMeTest3"/>
         </methods>
-      </class> <!-- sfdcTests.LoginTest -->
+      </class> <!-- sfdcTests.UserMenuTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [RegressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

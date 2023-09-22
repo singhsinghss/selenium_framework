@@ -21,7 +21,7 @@ import sfdcUtils.FileUtils;
  * @author seema
  *
  */
-@Listeners (SFDClisteners.class)
+@Listeners(SFDClisteners.class)
 public class LoginTest extends CommonTest{
 	
 	/**
@@ -34,7 +34,7 @@ public class LoginTest extends CommonTest{
 	 */
 	
 	
-	@Test
+	@Test (priority=1)
 	public void LoginFail(Method name) throws IOException {
 		WebDriver driver=CommonTest.getDriver();
 		LoginPage lp=new LoginPage(driver);
@@ -53,7 +53,7 @@ public class LoginTest extends CommonTest{
 	 * @param password 
 	 * @throws IOException 
 	 */
-	@Test
+	@Test (priority=2)
 	public void LoginSuccess(Method name) throws IOException
 	{
 		WebDriver driver=CommonTest.getDriver();
@@ -71,7 +71,7 @@ public class LoginTest extends CommonTest{
 	 * checks if username is auto displayed after clicking on rememberMe checkbox
 	 * @throws IOException
 	 */
-	@Test 
+	@Test (priority=3) 
 	public void rememberMeTest3(Method name) throws IOException
 	{
 		
@@ -93,7 +93,7 @@ public class LoginTest extends CommonTest{
 	}
 	
 	
-	@Test ()
+	@Test (priority=4)
 	public void forgotpasswordTest4A(Method name) throws IOException
 	{
 		WebDriver driver=CommonTest.getDriver();
@@ -115,7 +115,7 @@ public class LoginTest extends CommonTest{
 				
 	}
 	
-	@Test
+	@Test (priority=5)
 	public void VerifyInvalidCredentials(Method name) throws IOException
 	{
 		WebDriver driver=CommonTest.getDriver();

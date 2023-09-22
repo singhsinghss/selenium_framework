@@ -1,0 +1,17 @@
+{
+	"prod": {
+		"uri": "",
+		"username": "singh@tekarch.com",
+		"password": "Admin123"
+	},
+	"qa": {
+		"uri": "",
+		"username": "qa.singh@tekarch.com",
+		"password": "Admin123"
+	},
+	"beta": {
+		"uri": "",
+		"username": "beta.singh@tekarch.com",
+		"password": "Admin123"
+	}
+}
