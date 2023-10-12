@@ -8,15 +8,47 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">61,662</td><td></td><td></td></tr>
+<tr><th colspan="7">RegressionTestSuite</th></tr>
+<tr><td><a href="#t0">crossbrowser</a></td><td class="num">9</td><td class="num">0</td><td class="num attn">1</td><td class="num">87,771</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">apitests.APILoginTest</td><td><a href="#m0">addUserData</a></td><td rowspan="1">1695322216208</td><td rowspan="1">3942</td></tr><tr class="passedeven"><td><a href="#m1">deleteData</a></td><td rowspan="1">1695322220152</td><td rowspan="1">3977</td></tr><tr class="passedeven"><td><a href="#m2">getUserData</a></td><td rowspan="1">1695322224136</td><td rowspan="1">42505</td></tr><tr class="passedeven"><td><a href="#m3">login_TC01</a></td><td rowspan="1">1695322208289</td><td rowspan="1">7916</td></tr><tr class="passedeven"><td><a href="#m4">updateData</a></td><td rowspan="1">1695322266641</td><td rowspan="1">3269</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">crossbrowser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sfdcTests.UserMenuTest</td><td><a href="#m0">mySetting_TC07</a></td><td rowspan="1">1696898694036</td><td rowspan="1">21398</td></tr><tr><th colspan="4">crossbrowser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">sfdcTests.LoginTest</td><td><a href="#m1">LoginFail</a></td><td rowspan="1">1696898658072</td><td rowspan="1">1080</td></tr><tr class="passedeven"><td><a href="#m2">LoginSuccess</a></td><td rowspan="1">1696898666917</td><td rowspan="1">2363</td></tr><tr class="passedeven"><td><a href="#m3">VerifyInvalidCredentials</a></td><td rowspan="1">1696898731767</td><td rowspan="1">1207</td></tr><tr class="passedeven"><td><a href="#m4">forgotpasswordTest4A</a></td><td rowspan="1">1696898720170</td><td rowspan="1">2313</td></tr><tr class="passedeven"><td><a href="#m5">rememberMeTest3</a></td><td rowspan="1">1696898694087</td><td rowspan="1">5244</td></tr><tr class="passedodd"><td rowspan="4">sfdcTests.UserMenuTest</td><td><a href="#m6">DeveloperConsole_TC08</a></td><td rowspan="1">1696898720147</td><td rowspan="1">4308</td></tr><tr class="passedodd"><td><a href="#m7">logout_TC09</a></td><td rowspan="1">1696898731729</td><td rowspan="1">6256</td></tr><tr class="passedodd"><td><a href="#m8">myProfile_TC06</a></td><td rowspan="1">1696898666665</td><td rowspan="1">22347</td></tr><tr class="passedodd"><td><a href="#m9">userMenuDropDown_TC05</a></td><td rowspan="1">1696898657857</td><td rowspan="1">3870</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">apitests.APILoginTest#addUserData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">apitests.APILoginTest#deleteData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">apitests.APILoginTest#getUserData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">apitests.APILoginTest#login_TC01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">apitests.APILoginTest#updateData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>crossbrowser</h2><h3 id="m0">sfdcTests.UserMenuTest#mySetting_TC07</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.UserMenuTest.mySetting_TC07(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .messageText
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d9a21e20-276b-4dab-b4a5-4d5036b33808, findElement {using=class name, value=messageText}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:45867, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 3004, moz:profile: C:\Users\seema\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9a21e20-276b-4dab-b4a5-4d5036b33808
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy34.isDisplayed(Unknown Source)
+	at sfdcPages.UserMenu.VerifyEmailUpdated(UserMenu.java:566)
+	at sfdcTests.UserMenuTest.mySetting_TC07(UserMenuTest.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">sfdcTests.LoginTest#LoginFail</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.LoginTest.LoginFail(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">sfdcTests.LoginTest#LoginSuccess</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.LoginTest.LoginSuccess(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">sfdcTests.LoginTest#VerifyInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.LoginTest.VerifyInvalidCredentials(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">sfdcTests.LoginTest#forgotpasswordTest4A</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.LoginTest.forgotpasswordTest4A(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">sfdcTests.LoginTest#rememberMeTest3</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.LoginTest.rememberMeTest3(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">sfdcTests.UserMenuTest#DeveloperConsole_TC08</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.UserMenuTest.DeveloperConsole_TC08(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">sfdcTests.UserMenuTest#logout_TC09</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.UserMenuTest.logout_TC09(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">sfdcTests.UserMenuTest#myProfile_TC06</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.UserMenuTest.myProfile_TC06(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">sfdcTests.UserMenuTest#userMenuDropDown_TC05</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void sfdcTests.UserMenuTest.userMenuDropDown_TC05(java.lang.reflect.Method) throws java.io.IOException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

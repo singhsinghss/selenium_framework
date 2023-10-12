@@ -1,7 +1,0 @@
-2023-09-03-11:53:26 INFO  CommonTest : setup :LoginFail The object for reporting is created
-2023-09-03-11:53:28 INFO  CommonTest : setup :LoginSuccess The object for reporting is created
-2023-09-03-11:53:28 INFO  CommonTest : setup :forgotpasswordTest4A The object for reporting is created
-2023-09-03-11:53:31 INFO  LoginPage : verifyForgotPWD: is executing
-2023-09-03-11:53:31 INFO  CommonTest : setup :rememberMeTest3 The object for reporting is created
-2023-09-03-11:53:32 INFO  LoginPage : isHomePageVisible: is executing
-2023-09-03-11:53:34 INFO  LoginPage : isUserNameAutoDisplayed: is executing

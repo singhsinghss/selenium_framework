@@ -1,6 +1,6 @@
 <Configuration status="warn" name="sfdc" packages="">
 	<Appenders>
-		<RollingFile name="rollingFile" fileName="src/test/resources/Logs/sfdc.log" filePattern="log/application-%d{yyyy-MM-dd-HH-mm}-%i.log">
+		<RollingFile name="rollingFile" fileName="src/test/resources/Logs/sfdcAndAPI_${date:yyyyMMdd}.log" filePattern="log/application-%d{yyyy-MM-dd-HH-mm}-%i.log">
 			<PatternLayout>
 				<Pattern>%d{yyyy-MM-dd-HH:mm:ss} %-5p %m%n</Pattern>
 			</PatternLayout>

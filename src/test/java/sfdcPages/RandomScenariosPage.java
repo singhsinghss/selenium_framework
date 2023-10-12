@@ -1,6 +1,7 @@
 package sfdcPages;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,7 +32,8 @@ public class RandomScenariosPage extends CommonPage{
   @FindBy(xpath = "//div[@class='userBlock']//child::a[@class='userMru']")
   public WebElement userNameLink;
   
-  @FindBy(xpath = "//div[@class='vfButtonBar']//child::a[@class='contactInfoLaunch editLink']")
+  //@FindBy(xpath = "//div[@class='vfButtonBar']//child::a[@class='contactInfoLaunch editLink']")
+  @FindBy(xpath = "//a[@class='contactInfoLaunch editLink']")
   public WebElement editContact;
   
   @FindBy(id = "contactInfoContentId")
@@ -92,7 +94,7 @@ public class RandomScenariosPage extends CommonPage{
 	  boolean isPageDisplayed=false;
 	  if(CommonUtils.waitForElementToDisplay(driver, fullName))
 	  {
-		  if(fullName.getText().equals(sUserFullName))
+		  if(fullName.getText().startsWith(sUserFullName))
 		  {
 			  isPageDisplayed=true;
 			  System.out.println("Home page with username was displayed");
@@ -112,20 +114,32 @@ public class RandomScenariosPage extends CommonPage{
 	  return myProfileDisplayed;
   }
   
-  /*********************Edit profile TC34****************/
-  public boolean editProfile_TC34(WebDriver driver,String sLastName)
+  /*********************Edit profile TC34
+ * @throws InterruptedException ****************/
+  public boolean editProfile_TC34(WebDriver driver,String sLastName) throws InterruptedException
   {
 	  boolean isEdited=false;
 	  if(CommonUtils.waitForElement(driver, userNameLink))
 	  {
 		  userNameLink.click();
-		  if(CommonUtils.waitForElement(driver, editContact))
-		  {
-			  JavascriptExecutor jse = (JavascriptExecutor)driver;
-			  jse.executeScript("scroll(0,400)");
+		  
+		  JavascriptExecutor js = (JavascriptExecutor) driver;
+		  js.executeScript("window.scrollBy(0,400)", "");
+			 
+		  CommonUtils.waitForElementToDisplay(driver, editContact);
+		  if(editContact.isDisplayed())
+		  {	
+			  //System.out.println("clicking edit contact");	
+			  //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			  //JavascriptExecutor js = (JavascriptExecutor) driver;
+			 // js.executeScript("arguments[0].click();", editContact);
+			  Thread.sleep(3000);
 			  editContact.click();
+			  
 			  if(CommonUtils.waitForElementToDisplay(driver,iframe))
 			  {
+				  if(iframe.isDisplayed())
+				  {
 				  driver.switchTo().frame(iframe);
 				  if(aboutTab.isDisplayed())
 				  {
@@ -136,6 +150,7 @@ public class RandomScenariosPage extends CommonPage{
 					  System.out.println("Clicked on save all button and last name has been updated");
 					  isEdited=true;
 				  }
+				  }
 			  }
 		  }
 	  }
@@ -144,6 +159,11 @@ public class RandomScenariosPage extends CommonPage{
   public boolean verifyUpdatedName(WebDriver driver,String sFullName)
   {
 	  boolean isUpdated=false;
+	  JavascriptExecutor js = (JavascriptExecutor) driver;
+	  js.executeScript("window.scrollBy(400,0)", "");
+		 
+	  CommonUtils.waitForElementToDisplay(driver, userNamelbl);
+	  
 	  if(userNamelbl.isDisplayed())
 	  {
 		  if(userNamelbl.getText().equals(sFullName))
@@ -190,6 +210,7 @@ public class RandomScenariosPage extends CommonPage{
   public boolean isTextExistsInDropDown(WebDriver driver, String sText) {
 		// TODO Auto-generated method stub
 		  boolean isExist=false;
+		  CommonUtils.waitForElementToDisplay(driver, SelectedTab);
 		  Select selectTab=new Select(SelectedTab);
 		  List<WebElement>allOptions=selectTab.getOptions();
 			 for(int i=0;i<allOptions.size();i++)

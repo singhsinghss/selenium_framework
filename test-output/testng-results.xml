@@ -1,33 +1,438 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="2" total="12" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61662" started-at="2023-09-21T18:50:08Z" finished-at="2023-09-21T18:51:09Z">
+  <suite name="RegressionTestSuite" duration-ms="87771" started-at="2023-10-10T00:44:13Z" finished-at="2023-10-10T00:45:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61662" started-at="2023-09-21T18:50:08Z" finished-at="2023-09-21T18:51:09Z">
-      <class name="apitests.APILoginTest">
-        <test-method status="PASS" signature="login_TC01()[pri:0, instance:apitests.APILoginTest@4e1d422d]" name="login_TC01" duration-ms="7916" started-at="2023-09-21T18:50:08Z" finished-at="2023-09-21T18:50:16Z">
+    <test name="crossbrowser" duration-ms="87771" started-at="2023-10-10T00:44:13Z" finished-at="2023-10-10T00:45:41Z">
+      <class name="sfdcTests.UserMenuTest">
+        <test-method status="PASS" signature="configureReport()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="configureReport" is-config="true" duration-ms="137" started-at="2023-10-10T00:44:13Z" finished-at="2023-10-10T00:44:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_TC01 -->
-        <test-method status="PASS" signature="addUserData()[pri:0, instance:apitests.APILoginTest@4e1d422d]" name="addUserData" duration-ms="3942" started-at="2023-09-21T18:50:16Z" depends-on-methods="apitests.APILoginTest.login_TC01" finished-at="2023-09-21T18:50:20Z">
+        </test-method> <!-- configureReport -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="setDriver" is-config="true" duration-ms="4585" started-at="2023-10-10T00:44:13Z" finished-at="2023-10-10T00:44:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.userMenuDropDown_TC05(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUserData -->
-        <test-method status="PASS" signature="deleteData()[pri:0, instance:apitests.APILoginTest@4e1d422d]" name="deleteData" duration-ms="3977" started-at="2023-09-21T18:50:20Z" depends-on-methods="apitests.APILoginTest.login_TC01" finished-at="2023-09-21T18:50:24Z">
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="userMenuDropDown_TC05(java.lang.reflect.Method)[pri:1, instance:sfdcTests.UserMenuTest@1a6d8329]" name="userMenuDropDown_TC05" duration-ms="3870" started-at="2023-10-10T00:44:17Z" finished-at="2023-10-10T00:44:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.userMenuDropDown_TC05(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteData -->
-        <test-method status="PASS" signature="getUserData()[pri:0, instance:apitests.APILoginTest@4e1d422d]" name="getUserData" duration-ms="42505" started-at="2023-09-21T18:50:24Z" depends-on-methods="apitests.APILoginTest.login_TC01" finished-at="2023-09-21T18:51:06Z">
+        </test-method> <!-- userMenuDropDown_TC05 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="remove" is-config="true" duration-ms="1770" started-at="2023-10-10T00:44:21Z" finished-at="2023-10-10T00:44:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUserData -->
-        <test-method status="PASS" signature="updateData()[pri:0, instance:apitests.APILoginTest@4e1d422d]" name="updateData" duration-ms="3269" started-at="2023-09-21T18:51:06Z" depends-on-methods="apitests.APILoginTest.login_TC01" finished-at="2023-09-21T18:51:09Z">
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="setDriver" is-config="true" duration-ms="3164" started-at="2023-10-10T00:44:23Z" finished-at="2023-10-10T00:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.myProfile_TC06(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateData -->
-      </class> <!-- apitests.APILoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="myProfile_TC06(java.lang.reflect.Method)[pri:2, instance:sfdcTests.UserMenuTest@1a6d8329]" name="myProfile_TC06" duration-ms="22347" started-at="2023-10-10T00:44:26Z" finished-at="2023-10-10T00:44:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.myProfile_TC06(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myProfile_TC06 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="remove" is-config="true" duration-ms="1274" started-at="2023-10-10T00:44:49Z" finished-at="2023-10-10T00:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="setDriver" is-config="true" duration-ms="3745" started-at="2023-10-10T00:44:50Z" finished-at="2023-10-10T00:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.mySetting_TC07(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="FAIL" signature="mySetting_TC07(java.lang.reflect.Method)[pri:3, instance:sfdcTests.UserMenuTest@1a6d8329]" name="mySetting_TC07" duration-ms="21398" started-at="2023-10-10T00:44:54Z" finished-at="2023-10-10T00:45:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.mySetting_TC07(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .messageText
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d9a21e20-276b-4dab-b4a5-4d5036b33808, findElement {using=class name, value=messageText}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:45867, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 3004, moz:profile: C:\Users\seema\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9a21e20-276b-4dab-b4a5-4d5036b33808]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .messageText
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d9a21e20-276b-4dab-b4a5-4d5036b33808, findElement {using=class name, value=messageText}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:45867, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 3004, moz:profile: C:\Users\seema\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9a21e20-276b-4dab-b4a5-4d5036b33808
+at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy34.isDisplayed(Unknown Source)
+at sfdcPages.UserMenu.VerifyEmailUpdated(UserMenu.java:566)
+at sfdcTests.UserMenuTest.mySetting_TC07(UserMenuTest.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySetting_TC07 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="remove" is-config="true" duration-ms="1256" started-at="2023-10-10T00:45:15Z" finished-at="2023-10-10T00:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="setDriver" is-config="true" duration-ms="3378" started-at="2023-10-10T00:45:16Z" finished-at="2023-10-10T00:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.DeveloperConsole_TC08(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="DeveloperConsole_TC08(java.lang.reflect.Method)[pri:4, instance:sfdcTests.UserMenuTest@1a6d8329]" name="DeveloperConsole_TC08" duration-ms="4308" started-at="2023-10-10T00:45:20Z" finished-at="2023-10-10T00:45:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.DeveloperConsole_TC08(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeveloperConsole_TC08 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="remove" is-config="true" duration-ms="3526" started-at="2023-10-10T00:45:24Z" finished-at="2023-10-10T00:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="setDriver" is-config="true" duration-ms="3747" started-at="2023-10-10T00:45:27Z" finished-at="2023-10-10T00:45:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.logout_TC09(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="logout_TC09(java.lang.reflect.Method)[pri:5, instance:sfdcTests.UserMenuTest@1a6d8329]" name="logout_TC09" duration-ms="6256" started-at="2023-10-10T00:45:31Z" finished-at="2023-10-10T00:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.UserMenuTest.logout_TC09(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_TC09 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="remove" is-config="true" duration-ms="3032" started-at="2023-10-10T00:45:37Z" finished-at="2023-10-10T00:45:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:sfdcTests.UserMenuTest@1a6d8329]" name="teardown" is-config="true" duration-ms="849" started-at="2023-10-10T00:45:41Z" finished-at="2023-10-10T00:45:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sfdcTests.UserMenuTest -->
+      <class name="sfdcTests.LoginTest">
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="setDriver" is-config="true" duration-ms="4800" started-at="2023-10-10T00:44:13Z" finished-at="2023-10-10T00:44:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.LoginFail(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="LoginFail(java.lang.reflect.Method)[pri:1, instance:sfdcTests.LoginTest@1a942c18]" name="LoginFail" duration-ms="1080" started-at="2023-10-10T00:44:18Z" finished-at="2023-10-10T00:44:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.LoginFail(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFail -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="remove" is-config="true" duration-ms="1397" started-at="2023-10-10T00:44:19Z" finished-at="2023-10-10T00:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="setDriver" is-config="true" duration-ms="3417" started-at="2023-10-10T00:44:23Z" finished-at="2023-10-10T00:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.LoginSuccess(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="LoginSuccess(java.lang.reflect.Method)[pri:2, instance:sfdcTests.LoginTest@1a942c18]" name="LoginSuccess" duration-ms="2363" started-at="2023-10-10T00:44:26Z" finished-at="2023-10-10T00:44:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.LoginSuccess(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="remove" is-config="true" duration-ms="1652" started-at="2023-10-10T00:44:29Z" finished-at="2023-10-10T00:44:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="setDriver" is-config="true" duration-ms="3796" started-at="2023-10-10T00:44:50Z" finished-at="2023-10-10T00:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.rememberMeTest3(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="rememberMeTest3(java.lang.reflect.Method)[pri:3, instance:sfdcTests.LoginTest@1a942c18]" name="rememberMeTest3" duration-ms="5244" started-at="2023-10-10T00:44:54Z" finished-at="2023-10-10T00:44:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.rememberMeTest3(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rememberMeTest3 -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="remove" is-config="true" duration-ms="2030" started-at="2023-10-10T00:44:59Z" finished-at="2023-10-10T00:45:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="setDriver" is-config="true" duration-ms="3401" started-at="2023-10-10T00:45:16Z" finished-at="2023-10-10T00:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.forgotpasswordTest4A(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="forgotpasswordTest4A(java.lang.reflect.Method)[pri:4, instance:sfdcTests.LoginTest@1a942c18]" name="forgotpasswordTest4A" duration-ms="2313" started-at="2023-10-10T00:45:20Z" finished-at="2023-10-10T00:45:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.forgotpasswordTest4A(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpasswordTest4A -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="remove" is-config="true" duration-ms="2127" started-at="2023-10-10T00:45:22Z" finished-at="2023-10-10T00:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="setDriver(java.lang.String, boolean, java.lang.reflect.Method)[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="setDriver" is-config="true" duration-ms="3785" started-at="2023-10-10T00:45:27Z" finished-at="2023-10-10T00:45:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.VerifyInvalidCredentials(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="VerifyInvalidCredentials(java.lang.reflect.Method)[pri:5, instance:sfdcTests.LoginTest@1a942c18]" name="VerifyInvalidCredentials" duration-ms="1207" started-at="2023-10-10T00:45:31Z" finished-at="2023-10-10T00:45:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sfdcTests.LoginTest.VerifyInvalidCredentials(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyInvalidCredentials -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:sfdcTests.LoginTest@1a942c18]" name="remove" is-config="true" duration-ms="2563" started-at="2023-10-10T00:45:32Z" finished-at="2023-10-10T00:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+      </class> <!-- sfdcTests.LoginTest -->
+    </test> <!-- crossbrowser -->
+  </suite> <!-- RegressionTestSuite -->
 </testng-results>

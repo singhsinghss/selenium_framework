@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import api.utils.commonUtilities;
 import sfdcUtils.CommonUtils;
 import sfdcUtils.FileUtils;
 
@@ -154,7 +156,7 @@ public class CreateAccountPage extends CommonPage{
  @FindBy(xpath = "//div[@class='toolsContentLeft']//li[2]//a[contains(text(),'30 days')]")
  public WebElement last30DaysActivity;
  
- @FindBy (id = "ext-gen148")
+ @FindBy (xpath = "//input[@name='dateColumn']")
  public WebElement dateField;
  
  @FindBy (className  = "pageDescription")
@@ -183,6 +185,9 @@ public class CreateAccountPage extends CommonPage{
  
  @FindBy (xpath = "//button[text()='Save']//following::button[text()='Save and Run Report']")
  public WebElement saveAndRunRpt;
+ 
+ @FindBy(xpath = "//td[@class='x-toolbar-cell']/div[@class='xtb-text rb_spinner16']")
+ public WebElement savingReportSpinner;
  
  @FindBy(className = "x-form-invalid-msg")
  public WebElement errorMsg;
@@ -515,6 +520,7 @@ public class CreateAccountPage extends CommonPage{
 				System.out.println("No account found for merging or not enough record found to merge.");
 				CommonUtils.waitForElement(driver, cancelButton);
 				cancelButton.click();
+				CommonUtils.waitForElementToDisplay(driver, AccTab);
 				if(AccTab.isDisplayed())
 				{
 					AccTab.click();
@@ -546,13 +552,15 @@ public class CreateAccountPage extends CommonPage{
 		 {isPagedisplayed=true;}
 	 return isPagedisplayed;
  }
- public boolean saveReport(WebDriver driver)
+ public boolean saveReport(WebDriver driver) throws InterruptedException
  {
 	 boolean isSaved=false;
 	 CommonUtils.waitForElementToDisplay(driver, dateField);
 	 dateField.click();
 	 Actions action=new Actions(driver);
-	 if(CommonUtils.waitForElementToDisplay(driver, selectCreateDate))
+	 Thread.sleep(3000);
+	 CommonUtils.waitForElementToDisplay(driver, selectCreateDate);
+	 if(selectCreateDate.isDisplayed())
 	 {
 		 //action.moveToElement(selectCreateDate).click().build().perform();
 		 selectCreateDate.click();
@@ -574,7 +582,7 @@ public class CreateAccountPage extends CommonPage{
 	 return isSaved;
  }
  
- public boolean saveAndRunReport(WebDriver driver,String sReportName,String sUniqueRptName)
+ public boolean saveAndRunReport(WebDriver driver,String sReportName,String sUniqueRptName) throws InterruptedException
  {
 	 boolean isRunandSaved=false;
 	 CommonUtils.waitForElementToDisplay(driver, reportName);
@@ -582,26 +590,26 @@ public class CreateAccountPage extends CommonPage{
 		 {
 		 	reportName.sendKeys(sReportName);
 		 	uniqueRptName.sendKeys(sUniqueRptName);
-		 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		 	
 		 	CommonUtils.waitForElementToDisplay(driver, saveAndRunRpt);
+		 	Thread.sleep(3000);
+		 	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		 	if(saveAndRunRpt.isEnabled())
 		 	{
 		 		
 		 			saveAndRunRpt.sendKeys(Keys.ENTER);
+				/*
+				 * Actions action=new Actions(driver);
+				 * action.moveToElement(saveAndRunRpt).click().perform();
+				 */
 		 			//((JavascriptExecutor) driver).executeScript("arguments[0].click();", saveAndRunRpt);
-		 			saveAndRunRpt.click();
-		 	
-		 		//if(CommonUtils.waitForElementToDisplay(driver, errorMsg))
-		 		if(errorMsg.isDisplayed())
-		 		{
-		 			System.out.println(sUniqueRptName +" already exists");
-		 			CancelRptButton.click();
-		 			closeButton.click();
-		 			cancelCloseRptBtn.click();
-		 			
-		 		}
-		 		//saveAndRunRpt.click();
-		 		else
+		 		saveAndRunRpt.click();
+		 		CommonUtils.waitForElementToDisplay(driver, savingReportSpinner);	
+		 		CommonUtils.waitForElementToDisappear(driver, savingReportSpinner);
+		 		CommonUtils.waitForElementToDisplay(driver, errorMsg);
+		 			//Thread.sleep(3000);
+		 		
+		 		if(!errorMsg.isDisplayed())
 		 		{
 		 			driver.switchTo().activeElement();
 				 	CommonUtils.waitForElementToDisplay(driver,reportPageHeader);
@@ -611,8 +619,18 @@ public class CreateAccountPage extends CommonPage{
 				 		System.out.println("Report has been run and saved");
 				 	}
 		 		}
+		 			
+		 		
+		 		//saveAndRunRpt.click();
+		 		else
+		 		{
+		 			System.out.println(sUniqueRptName +" already exists");
+		 			CancelRptButton.click();
+		 			closeButton.click();
+		 			cancelCloseRptBtn.click();
+		 			
 		 	}
-		 	
+		 	}
 		 	else
 		 	{
 		 		System.out.println("could not save and run report");

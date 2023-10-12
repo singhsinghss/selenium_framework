@@ -7,16 +7,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.beust.jcommander.Parameter;
 
 import Constants.FileConstants;
 
@@ -24,9 +29,12 @@ import Constants.FileConstants;
 public class CommonTest {
 
 	private static ThreadLocal<WebDriver> LocalDriver=new ThreadLocal<>();
-	static ExtentReports extent=new ExtentReports();
-	static ExtentSparkReporter spark=null;
+	public static ThreadLocal<ExtentTest> threadExtentTest=new ThreadLocal<>();
+	
+	protected static ExtentReports extent=new ExtentReports();
+	protected static ExtentSparkReporter spark=null;
 	public static ExtentTest test=null;
+	
 	public static org.apache.logging.log4j.Logger logger=org.apache.logging.log4j.LogManager.getLogger("COMMONTEST");
 	
 	@BeforeSuite
@@ -37,32 +45,26 @@ public class CommonTest {
 		extent.attachReporter(spark);
 	}
 	
-	/*
-	 * public void setup(Method name) {
-	 * CommonTest.test=extent.createTest(name.getName());
-	 * logger.info("CommonTest : setup :"+name.getName()
-	 * +" The object for reporting is created");
-	 * //getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); }
-	 */
 	
-	@AfterTest
+	@AfterSuite
 	public void teardown()
-	{
-		//logger.info("CommonTest : setup :"+name.getName()+" teardown called");
+	{		
 		extent.flush();
 	}
-	
-	@BeforeTest
-	public static void setDriver()
-	{				
+	@Parameters({"browserType","isHeadless"})
+	@BeforeMethod
+	public static void setDriver(String browserType, boolean isHeadless,Method name)
+	{	
+		//CommonTest.test=extent.createTest(name.getName());
+		//extentReport.get();
 		logger.info("CommonTest : setDriver :  Spark report configured");
-		WebDriver driver=OpenBrowser("chrome", true);
+		WebDriver driver=OpenBrowser(browserType, isHeadless);
 		logger.info("CommonTest : setDriver : driver object assigned");
 		LocalDriver.set(driver);
 		//logger.info("CommonTest : setup : "+ name.getName()+" Test Object for reporting is created");
 		
 	}
-	@BeforeClass
+	
 	public static WebDriver getDriver()
 	{
 		return LocalDriver.get();
@@ -98,8 +100,19 @@ public class CommonTest {
 				}
 				break;
 			case "firefox":
-				driver=new FirefoxDriver();
-				logger.info("BaseTest : getBrowserType : Firefix configured");
+				if(headless) {
+					FirefoxOptions co=new FirefoxOptions();
+					//logger.info("BaseTest : getBrowserType : Headless chrome configured");
+					co.addArguments("--headless");
+					driver=new FirefoxDriver(co);
+				//	driver=new ChromeDriver();
+					
+				}
+				else
+				{
+					driver=new FirefoxDriver();
+					logger.info("BaseTest : getBrowserType : Chrome configured");
+				}
 				break;
 			case "safari":
 				driver=new SafariDriver();

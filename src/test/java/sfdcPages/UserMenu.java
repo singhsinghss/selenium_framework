@@ -276,6 +276,8 @@ public class UserMenu extends CommonPage{
    
    public void EditContact(WebDriver driver)
    {
+	   JavascriptExecutor js = (JavascriptExecutor) driver;
+	   js.executeScript("window.scrollBy(0,300)", "");
 	   if(CommonUtils.waitForElement(driver, EditContactButton)) {
 	   EditContactButton.click();
 	   }
@@ -337,12 +339,14 @@ public class UserMenu extends CommonPage{
 	  return isPostCreated;
   }
   
-  public boolean VerifyFileUpload(WebDriver driver,String sFile)
+  public boolean VerifyFileUpload(WebDriver driver,String sFile) throws InterruptedException
   {
 	  boolean isFileUploadSuccess=false;
+	  Thread.sleep(3000);
 	  if(CommonUtils.waitForElement(driver, Filelink))
-	  {
+	  {		  		  
 		  JavascriptExecutor js=(JavascriptExecutor)driver;
+		  //js.executeScript("window.scrollBy(300,0)", "");
 		  js.executeScript("arguments[0].click();", Filelink);
 		 // Filelink.click();
 		  if(CommonUtils.waitForElement(driver, uploadFileFromYourComputer))
@@ -424,6 +428,8 @@ public class UserMenu extends CommonPage{
 			  if(downloadLoginHistory.isDisplayed())
 			  {
 				  downloadLoginHistory.click();
+				  System.out.println("Downloading login history file");
+		          logger.info("Downloading login history file");
 				  //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 			  }
 		  }
@@ -443,14 +449,17 @@ public class UserMenu extends CommonPage{
 	          // File has been found, it can now be deleted:
 	          dirContents[i].delete();
 	          isFileDownloaded =true;
+	          System.out.println("login history file has been downloaded");
+	          logger.info("login history file has been downloaded");
 	      }
 	    }
 	      return isFileDownloaded;
   }
   
-  public boolean DispalyandLayout(WebDriver driver)
+  public boolean DispalyandLayout(WebDriver driver) throws InterruptedException
   {
 	  boolean isPageDisplayed=false;
+	  Thread.sleep(2000);
 	  if(CommonUtils.waitForElement(driver, displayandLayout))
 	  {
 		  displayandLayout.click();
@@ -579,13 +588,14 @@ public boolean verifyTabAddedtoSelectedTab(WebDriver driver,String sText)
 		return isCalenderSelected;
 	}
 	
-	public boolean OpenTestReminder(WebDriver driver)
+	public boolean OpenTestReminder(WebDriver driver) throws InterruptedException
 	{
 		boolean isReminderWinDisplayed=false;
 		if(CommonUtils.waitForElement(driver, openATestReminder))
 		{
 			openATestReminder.click();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			Thread.sleep(2000);
 			String Parent=driver.getWindowHandle();
 			Set<String> windows=driver.getWindowHandles();
 			String [] childWindows=windows.toArray(new String[windows.size()]);
@@ -651,6 +661,7 @@ public boolean verifyTabAddedtoSelectedTab(WebDriver driver,String sText)
 			if(logOut.isDisplayed())
 			{
 				logOut.click();
+				isLogOut=true;
 			}
 		}
 		return isLogOut;

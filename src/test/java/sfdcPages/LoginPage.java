@@ -91,9 +91,10 @@ public class LoginPage extends CommonPage{
 		password.sendKeys(FileUtils.readLoginTestDataFile(FileConstants.LOGIN_TESTDATA_FILE_PATH,"password"));
 		loginBtn.click();
 	}
-	public boolean isHomePageVisible() {
+	public boolean isHomePageVisible(WebDriver driver) {
 		// TODO Auto-generated method stub
 		logger.info("LoginPage : isHomePageVisible: is executing");
+		CommonUtils.waitForElementToDisplay(driver,homeTab);
 		boolean isHomeVisible=false;
 		if(homeTab.isDisplayed())
 		{
@@ -138,7 +139,7 @@ public class LoginPage extends CommonPage{
 		String ExpectedMsg=FileUtils.readLoginTestDataFile(FileConstants.LOGIN_TESTDATA_FILE_PATH, "ErrorMessage");
 		Assert.assertEquals(ExpectedMsg, ErrorMsg.getText());
 		isValid=true;
-		logger.info("LoginPage : result : is expected");
+		logger.info("LoginPage : result is as expected");
 		return isValid;
 	}
 	

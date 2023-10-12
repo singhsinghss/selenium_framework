@@ -8,7 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ISelect;
 
+import api.utils.commonUtilities;
 import io.netty.handler.timeout.TimeoutException;
+import sfdcTests.CommonTest;
 import sfdcUtils.CommonUtils;
 
 public class ContactsPage {
@@ -62,6 +64,9 @@ public class ContactsPage {
   
   @FindBy(xpath = "//div[@class='pbHeader']//input[@class='btn primary']")
   public WebElement saveViewBtn;
+  
+  @FindBy(xpath  = "//td[@id='bodyCell']/table/tbody/tr[1]/td[1]")
+  public WebElement ViewPageerror;
   
   @FindBy(css = "select[class='title']")
   public WebElement viewPageTitle;
@@ -199,10 +204,23 @@ public class ContactsPage {
 			  viewName.sendKeys(sViewName);
 			  uniqueViewName.sendKeys(sUniqueViewName);
 			  saveViewBtn.click();
-			  if(CommonUtils.waitForElementToDisplay(driver, viewPageTitle))
+			  CommonUtils.waitForElementToDisplay(driver, ViewPageerror);
+			  if(ViewPageerror.isDisplayed())
 			  {
+				  System.out.println("New View was not created");
+				  if(CommonUtils.waitForElementToDisplay(driver, ViewPageerror))
+				  {
+					  System.out.println(ViewPageerror.getText() +" Entered view name already exists.");
+					  CommonTest.logger.info("TC26: Create New View: "+ViewPageerror.getText() +" Entered view name already exists.");
+					  isCreated=false;
+				  }
+			  }
+			  else
+			  {
+				  CommonUtils.waitForElementToDisplay(driver, viewPageTitle);
 				  isCreated=true;
 				  System.out.println("New View has been created");
+				  deleteView(driver);
 			  }
 		  }
 	  }
@@ -249,18 +267,18 @@ public class ContactsPage {
 	  {
 		  CommonUtils.selectByValue(driver, contactDropDwn, sText);
 		  
-		  if(!CommonUtils.waitForElementToDisplay(driver, goButton))
-		  {
-			  System.out.println("go button not displayed");			  
-			 
-		  }
-		  else
-		  {
-			  if(goButton.isDisplayed())
-			  {	  
-				  goButton.click();
-			  }
-		  }
+				
+				  if(!CommonUtils.waitForElementToDisplay(driver, goButton)) {
+				  System.out.println("go button not displayed");
+				  
+				  } 
+				  else {
+					  if(goButton.isDisplayed()) 
+					  { 
+						  goButton.click(); 
+					  }
+				 }
+				 
 		  if(CommonUtils.waitForElementToDisplay(driver, myContactViewRpt))
 		  {
 			  isSelected=true;
@@ -285,6 +303,7 @@ public class ContactsPage {
 	  if(CommonUtils.waitForElement(driver, recentContactLink))
 	  {
 		  recentContactLink.click();
+		  CommonUtils.waitForElementToDisplay(driver, savedContactPage);
 		  if(savedContactPage.isDisplayed())
 		  {
 			  isDisplayed=true;
@@ -301,6 +320,7 @@ public class ContactsPage {
 	  if(newViewLink.isDisplayed())
 	  {
 		  newViewLink.click();
+		  CommonUtils.waitForElementToDisplay(driver, uniqueViewName);
 		  if(uniqueViewName.isDisplayed())
 		  {
 			  uniqueViewName.sendKeys(sUniqueViewName);
@@ -345,6 +365,7 @@ public class ContactsPage {
 	  if(CommonUtils.waitForElement(driver, newBtn))
 	  {
 		  newBtn.click();
+		  CommonUtils.waitForElementToDisplay(driver, lastNameInput);
 		  if(lastNameInput.isDisplayed())
 		  {
 			  lastNameInput.sendKeys(sNewLastName);

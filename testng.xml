@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionTestSuite" >
+	
+  <test thread-count="5" name="Test" parallel="methods" enabled="false">  
+  <parameter name="browserType" value="chrome"></parameter>
+	<parameter name="isHeadless" value="true"></parameter>
+    <classes>
+      <!-- <class name="sfdcTests.CreateAccountTest"/>      
+      <class name="sfdcTests.opportunitiesTest"/>      
+      <class name="sfdcTests.RandomScenariosTest"/>
+      
+      <class name="sfdcTests.UserMenuTest"/> --> 
+      <class name="sfdcTests.LoginTest"/> 
+      <class name="sfdcTests.LeadsTest"/>     
+      <!-- <class name="sfdcTests.ContactsTest"/> -->
+    </classes>
+  </test> 
+  <test thread-count="5" name="crossbrowser" parallel="methods">  
+  <parameter name="browserType" value="firefox"></parameter>
+	<parameter name="isHeadless" value="true"></parameter>
+    <classes>
+      <!-- <class name="sfdcTests.CreateAccountTest"/>      
+      <class name="sfdcTests.opportunitiesTest"/>      
+      <class name="sfdcTests.RandomScenariosTest"/>
+      <class name="sfdcTests.LeadsTest"/>-->
+      <class name="sfdcTests.UserMenuTest"/>  
+      <class name="sfdcTests.LoginTest"/>      
+      <!-- <class name="sfdcTests.ContactsTest"/> -->
+    </classes>
+  </test>
+</suite> <!-- RegressionTestSuite -->

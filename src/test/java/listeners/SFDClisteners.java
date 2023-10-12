@@ -16,16 +16,17 @@ public class SFDClisteners extends CommonTest implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result)
 	{
-		CommonTest.test.pass(MarkupHelper.createLabel(result.getName()+" PASS", ExtentColor.GREEN));
+		
+		CommonTest.threadExtentTest.get().pass(MarkupHelper.createLabel(result.getName()+" PASS", ExtentColor.GREEN));
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		CommonTest.test.fail(MarkupHelper.createLabel(result.getName()+" FAIL", ExtentColor.RED));
+		CommonTest.threadExtentTest.get().fail(MarkupHelper.createLabel(result.getName()+" FAIL", ExtentColor.RED));
 		try {
-			CommonTest.test.addScreenCaptureFromPath(CommonUtils.getScreenshot(CommonTest.getDriver()));
+			CommonTest.threadExtentTest.get().addScreenCaptureFromPath(CommonUtils.getScreenshot(CommonTest.getDriver()));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -33,10 +34,11 @@ public class SFDClisteners extends CommonTest implements ITestListener{
 		}
 	}
 
-	@Override
+	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		CommonTest.test = extent.createTest(result.getName());
+		CommonTest.threadExtentTest.set(CommonTest.test);
 	}
 
 	@Override

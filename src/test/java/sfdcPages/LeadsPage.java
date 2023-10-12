@@ -163,6 +163,7 @@ public class LeadsPage {
 	  if(CommonUtils.waitForElement(driver, newBtn))
 	  {
 		  newBtn.click();
+		  CommonUtils.waitForElementToDisplay(driver, lastName);
 		  lastName.clear();
 		  lastName.sendKeys(sLastName);
 		  companyName.clear();
