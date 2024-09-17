@@ -38,8 +38,7 @@ public class APILoginTest extends APIBastTest{
 	}
 	@Test(enabled=true, groups = "login")
 	public void login_TC01(Method name) {
-		//RestAssured.baseURI = "https://us-central1-qa01-tekarch-accmanager.cloudfunctions.net";
-		//APIBastTest.test=extent.createTest(name.getName());
+		
 		token="";
 		//token.equals("");
 		System.out.println("token :"+token);
